@@ -2,12 +2,6 @@ pub trait Rot13 {
     fn rot13(&self) -> String;
 }
 
-impl Rot13 for String {
-    fn rot13(&self) -> Self {
-        self.chars().map(rot13).collect::<String>()
-    }
-}
-
 impl Rot13 for str {
     fn rot13(&self) -> String {
         self.chars().map(rot13).collect::<String>()
