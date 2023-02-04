@@ -1,4 +1,6 @@
+/// Encode a value as rot13
 pub trait Rot13 {
+    /// Encode a value as rot13
     fn rot13(&self) -> String;
 }
 
@@ -8,6 +10,7 @@ impl Rot13 for str {
     }
 }
 
+/// Takes a character and encodes it as rot13
 fn rot13(c: char) -> char {
     if !c.is_ascii_alphabetic() {
         return c;
@@ -34,8 +37,8 @@ mod tests {
 
     #[test]
     fn test_rot13() {
-        for (i, o) in ROT13 {
-            assert_eq!(i.rot13(), *o);
+        for (input, ciphered) in ROT13 {
+            assert_eq!(input.rot13(), *ciphered);
         }
     }
 }

@@ -1,7 +1,8 @@
 [package]
-name = "rot13"
+name = "rot13-rs"
+description = "Tiny idiomatic Rust ROT13 implementation"
 authors = ["fawn <fawn@envs.net>"]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "ISC"
 repository = "https://github.com/fawni/rot13.rs"
